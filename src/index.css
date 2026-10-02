@@ -1,70 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap");
 
 @import "tailwindcss";
 
-
+body {
+  line-height: 1;
+  margin: 0px;
+  padding: 0px;
+}
 
 @theme {
+  --color-primary: #ff8028;
+  --color-primary-hover: #e96f1f;
+  --color-primary-dark: #f57d2b;
+  --color-primary-light: #fef2ea;
+  --color-danger-dark: #dc2626;
+  --color-danger-light: #f87171;
 
+  --color-secondary-light: #00000033;
 
-    --color-primary: #FF8028;
-    --color-primary-hover: #E96F1F;
-    --color-primary-dark: #F57D2B;
-    --color-primary-light: #FEF2EA;
+  --color-secondary: #909090;
+  --color-secondary-hover: #707070;
 
-    --color-secondary-light: #00000033;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f1f5f9;
 
+  --color-text-primary: #3f3f3f;
+  --color-text-secondary: #494949;
+  --color-text-muted: #909090;
+  --color-text-light: #ffffff;
 
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
 
-    --color-secondary: #909090;
-    --color-secondary-hover: #707070;
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+  --color-info: #0284c7;
 
-
-
-    --color-background: #F8FAFC;
-    --color-surface: #FFFFFF;
-    --color-surface-secondary: #F1F5F9;
-
-
-
-    --color-text-primary: #3F3F3F;
-    --color-text-secondary: #494949;
-    --color-text-muted: #909090;
-    --color-text-light: #ffffff;
-
-
-
-    --color-border: #E2E8F0;
-    --color-border-light: #F1F5F9;
-
-
-
-    --color-success: #16A34A;
-    --color-warning: #F59E0B;
-    --color-danger: #DC2626;
-    --color-info: #0284C7;
-
-
-
-    --font-sans: "Inter", sans-serif;
-    --font-heading: "Plus Jakarta Sans", sans-serif;
-    --font-geist: "Geist", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-geist: "Geist", sans-serif;
 }
 
 @keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .animate-slide-in {
-    animation: slide-in 0.6s ease-out;
+  animation: slide-in 0.6s ease-out;
 }
